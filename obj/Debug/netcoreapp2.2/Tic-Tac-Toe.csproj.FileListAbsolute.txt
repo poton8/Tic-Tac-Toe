@@ -1,0 +1,11 @@
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\bin\Debug\netcoreapp2.2\Tic-Tac-Toe.deps.json
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\bin\Debug\netcoreapp2.2\Tic-Tac-Toe.runtimeconfig.json
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\bin\Debug\netcoreapp2.2\Tic-Tac-Toe.runtimeconfig.dev.json
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\bin\Debug\netcoreapp2.2\Tic-Tac-Toe.dll
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\bin\Debug\netcoreapp2.2\Tic-Tac-Toe.pdb
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\obj\Debug\netcoreapp2.2\Tic-Tac-Toe.csprojAssemblyReference.cache
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\obj\Debug\netcoreapp2.2\Tic-Tac-Toe.csproj.CoreCompileInputs.cache
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\obj\Debug\netcoreapp2.2\Tic-Tac-Toe.AssemblyInfoInputs.cache
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\obj\Debug\netcoreapp2.2\Tic-Tac-Toe.AssemblyInfo.cs
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\obj\Debug\netcoreapp2.2\Tic-Tac-Toe.dll
+C:\Users\Peyton\Documents\Visual Studio Code\C#\Tic-Tac-Toe\obj\Debug\netcoreapp2.2\Tic-Tac-Toe.pdb
