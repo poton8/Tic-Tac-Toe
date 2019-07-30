@@ -12,22 +12,25 @@ namespace Tic_Tac_Toe
             Game game = new Game();
             bool isTurn = game.isFirst();
             bool isGameDone = false;
-            while(isGameDone != true)
-            if(isTurn){
-                game.printBoard();
-                game.userTurn();
-                game.aiTurn();
-                isTurn = false;
-            }
+            while(!isGameDone){
+                if(isTurn){
+                    game.printBoard();
+                    game.userTurn();
+                    isGameDone = game.isGameDone();
+                    game.aiTurn();
+                    isGameDone = game.isGameDone();
+                }
 
-            else{
-                game.aiTurn();
-                game.printBoard();
-                game.userTurn();
-                isTurn = true;
+                else{
+                    game.aiTurn();
+                    isGameDone = game.isGameDone();
+                    game.printBoard();
+                    game.userTurn();
+                    isGameDone = game.isGameDone();
+                }
+
             }
 
         }
-
     }
 }

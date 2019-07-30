@@ -3,7 +3,9 @@ using System;
 namespace Tic_Tac_Toe{
     class Game
     {
-        private String[] board = {"1","2","3","4","5","6","7","8","9"};
+        private String[,] board = {{"1","2","3"},{"4","5","6"},{"7","8","9"}};
+        private String aiLetter;
+        private int turns;
         Random rand = new Random();
         public bool isFirst(){
             bool isFirst = Convert.ToBoolean(rand.Next(0,2));
@@ -12,42 +14,49 @@ namespace Tic_Tac_Toe{
 
         public void userTurn(){
             Console.WriteLine("Enter your move");
-            int index = Convert.ToInt16(Console.ReadLine());
-            board[index - 1]  = "X";
+            String choice = Console.ReadLine();
+            for(int i =0;i<3;i++){
+                for(int j =0;j<3;j++){
+                    if(choice==board[i,j]){
+                        board[i,j] = "X";
+                    }
+                }
+            }
         }
 
         public void aiTurn(){
-
-        }
-
-        public minimax(newBoard, Player){
-            int[] indexes = {};
-            foreach(String element in board){
-                if (element != "X" || element != "O"){
-                    indexes[Convert.ToInt16(element) - 1] = Convert.ToInt16(element);
+            while(true){
+                int i = rand.Next(0,3);
+                int j = rand.Next(0,3);
+                if(board[i,j] != "X" && board[i,j] != "O"){
+                    board[i,j] = "O";
+                    break;
                 }
             }
-
         }
 
+        
+
         public bool isGameDone(){
-            bool isContinue;
-            isContinue = true;
-            return isContinue;
+            bool isDone;
+            turns++;
+            if(turns == 9){
+                isDone = true;
+            }
+            else{
+                isDone = false;
+            }
+            return isDone;
         }
 
  
         public void printBoard(){
-            int count = 0;
-            foreach(String element in board){
-                if(count==3){
-                    Console.WriteLine();
-                    count = 0;
+            for(int i =0;i<3;i++){
+                for(int j =0;j<3;j++){
+                    Console.Write(board[i,j]);
                 }
-                Console.Write(element);
-                count++;
+                Console.WriteLine();
             }
-            Console.WriteLine();
         } 
     } 
 } 
