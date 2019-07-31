@@ -29,6 +29,11 @@ namespace Tic_Tac_Toe
                     isGameDone = game.isGameDone();
                 }
 
+                if(isGameDone == true){
+                    Console.WriteLine("Game is over");
+                    break;
+                }
+
             }
 
         }
